@@ -7,8 +7,8 @@ import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 
 //coloquei o first component abaixo em declarations para aparecer na tela e precisa fazer a importação acima
-@NgModule({
-  declarations: [
+@NgModule({ //NgModule é um decorator
+  declarations: [ //metadado
     AppComponent,
     FirstComponent,
     SecondComponent
@@ -17,7 +17,7 @@ import { SecondComponent } from './second/second.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [], //serviços que ficarão disponíveis para os componentes
+  bootstrap: [AppComponent] //component que deve ser instanciado 
 })
 export class AppModule { }
