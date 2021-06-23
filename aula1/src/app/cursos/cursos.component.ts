@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursosComponent implements OnInit {
 
-  constructor() { }
+  nomePortal: string; //declaração de variável e tipagem
+  cursos: string [] = ['Front-end', 'Back-end', 'Cloud'] //declaração de uma array
+
+  constructor() { 
+    this.nomePortal = 'https://www.alura.com.br'; //inicializa a var através do this 
+  }
 
   ngOnInit(): void {
   }
