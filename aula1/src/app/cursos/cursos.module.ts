@@ -11,7 +11,7 @@ import { CursosService } from './cursos.service';
     CursosComponent,
     CursoDetalheComponent 
   ],
-  imports: [
+  imports: [ 
     CommonModule
   ],
   exports: [ //quais são as declarações, diretivas, pipes do módulo que quero expor para outros módulos
@@ -23,4 +23,4 @@ import { CursosService } from './cursos.service';
   ]
 })
 export class CursosModule { }
-  
+    
