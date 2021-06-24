@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser'; //prepara a aplicaç�
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CursosModule } from './cursos/cursos.module';
+import { CursosService } from './cursos/cursos.service';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
 
@@ -19,7 +20,7 @@ import { SecondComponent } from './second/second.component';
     AppRoutingModule,
     CursosModule //tive que importar aqui para que fosse possível ser vísivel em tela.
   ],
-  providers: [], //serviços que ficarão disponíveis para os componentes declarados no módulo
+  providers: [CursosService], //serviços que ficarão disponíveis para os componentes declarados no módulo
   bootstrap: [AppComponent] //component que deve ser instanciado quando executar a aplicação
 })
 export class AppModule { }
