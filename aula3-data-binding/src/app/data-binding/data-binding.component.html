@@ -15,13 +15,13 @@
         <img src="{{cidadeVisitar}}">
         <img [src]="cidadeVisitar">
     </article> -->
-<!-- 
+    <!-- 
     <article>
         <h3>Class e Style Binding</h3>
         <div>
             Selecione uma classe: usando componente Boostrap-->
-            <!-- <select #classe (change) ="0" > é preciso criar uma var local para acessar as opções e cria um evento  -->
-                <!-- <option value="alert-success">Sucesso</option>
+    <!-- <select #classe (change) ="0" > é preciso criar uma var local para acessar as opções e cria um evento  -->
+    <!-- <option value="alert-success">Sucesso</option>
                 <option value="alert-info">Info</option>
                 <option value="alert-danger">Erro</option>
                 <option value="alert-warning">Alerta</option>
@@ -34,7 +34,7 @@
 
             <div class="alert" role="alert"
                 [class.alert-success]="classe.value == 'alert-success'"> <!-- exemplo de class binding -->
-                <!-- A simple success alert—check it out!
+    <!-- A simple success alert—check it out!
               </div>
               <div class="alert" role="alert"
               [class.alert-danger]="classe.value == 'alert-danger'">
@@ -55,15 +55,15 @@
               </div>
         </div>
     </article>  -->
-
+    <!-- 
     <article>
         <h3>Event binding</h3>
         <div>
-            <!--método criado no components.ts e dessa forma o event binding é usado-->
+            método criado no components.ts e dessa forma o event binding é usado
             <button (click)="botaoClicado()" 
             class="btn btn-primary">Clique aqui</button>
             <br><br>
-            <!--evento quando eu digito, dou enter-->
+            evento quando eu digito, dou enter
             <input type="text"
             (keyup)="onKeyUp($event)" 
             (keyup.enter)="valorSalvo(campoInput.value)"
@@ -82,6 +82,8 @@
             </span>
 
         </div>
-    </article>
+    </article> -->
+
+    <app-meu-form></app-meu-form>
 
 </section>

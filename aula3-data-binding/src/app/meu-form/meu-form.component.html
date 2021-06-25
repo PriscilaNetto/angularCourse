@@ -1,0 +1,23 @@
+
+    <section class="two-way-binding">
+        <article>
+            <h3>Two-way data-binding!</h3>
+            <div>
+                <!--valor do input(do componente para o template)-->
+                <input type="text" [value]="nome" (input)="nome = campoInput.value" 
+                #campoInput/>
+                 <!--valor do input(do template para o componente)-->
+                <input type="text" [ngModel]="nome" (ngModelChange)="nome = ($event)" />
+                <!--valor do input(two way data-binding usando o [(ngModel)] 'banana in a box')  dessa forma-->
+                <input type="text" [(ngModel)]="nome"/>
+
+                <p>Você digitou: {{ nome }}</p>
+            </div>
+
+            <input type="text" [(ngModel)]="pessoa.nome"/>
+            <input type="text" [(ngModel)]="pessoa.idade"/>
+            
+            <p>Olá eu sou {{ pessoa.nome }} e tenho {{ pessoa.idade}} anos. </p>
+        </article>
+    </section>
+
