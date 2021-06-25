@@ -6,7 +6,10 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<app-data-binding></app-data-binding>
+<!-- <app-data-binding></app-data-binding> -->
+<app-cycle [valorInicial]="valor" *ngIf="!deletarCiclo"></app-cycle>
+<button (click)="mudarValor()">Mudar Valor</button>
+<button (click)="destruirCiclo()">Deletar</button>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
