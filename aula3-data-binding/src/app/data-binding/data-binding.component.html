@@ -84,6 +84,18 @@
         </div>
     </article> -->
 
-    <app-meu-form></app-meu-form>
+    <!-- <app-meu-form></app-meu-form> -->
+    <section>
+        <article>
+            <h3>
+                Input/Output Properties
+            </h3>
+            <app-curso [nome]="nomeDoCurso"></app-curso> 
+            <contador [valor]="valorInicial"
+            (mudouValor)="onMudouValor($event)"
+            ></contador> <!--usando o input no output component.ts e a var do databinding-->
+            
+        </article>
+    </section>
 
 </section>
