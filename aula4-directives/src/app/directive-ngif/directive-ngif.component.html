@@ -26,3 +26,9 @@
 <div [hidden]="mostrarCursos">
   Não há cursos para serem listados.
 </div>
+
+<!-- exemplo de usar o template ao invés de *-->
+<h5> Removendo o * e usando o template</h5>
+<ng-template [ngIf]= "mostrarCursos">
+<div>Confeitaria</div>
+</ng-template>

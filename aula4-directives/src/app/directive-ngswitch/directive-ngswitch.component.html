@@ -33,3 +33,17 @@
   <p *ngSwitchCase="'pricing'">Modo pricing ativo</p>
   <p *ngSwitchDefault>Modo home ativo </p>
 </div>
+
+<h5>Removendo o * e usando template</h5>
+
+<div class="container" [ngSwitch]="aba">
+  <ng-template [ngSwitchCase]= "'features'">
+    <p> Modo feature ativo</p>
+  </ng-template>
+  <ng-template [ngSwitchCase]= "'pricing'">
+    <p> Modo pricing ativo</p>
+  </ng-template>
+  <ng-template [ngSwitchDefault]>
+    <p> Modo home ativo</p>
+  </ng-template>
+  </div>
