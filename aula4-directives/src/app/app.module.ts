@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -7,6 +8,8 @@ import { DirectiveNgifComponent } from './directive-ngif/directive-ngif.componen
 import { DirectiveNgswitchComponent } from './directive-ngswitch/directive-ngswitch.component';
 import { DirectivesNgforComponent } from './directives-ngfor/directives-ngfor.component';
 import { DirectivesNgClassComponent } from './directives-ng-class/directives-ng-class.component';
+import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
+import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { DirectivesNgClassComponent } from './directives-ng-class/directives-ng-
     DirectiveNgifComponent,
     DirectiveNgswitchComponent,
     DirectivesNgforComponent,
-    DirectivesNgClassComponent
+    DirectivesNgClassComponent,
+    DirectiveNgstyleComponent,
+    OperadorElvisComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

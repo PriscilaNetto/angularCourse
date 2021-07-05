@@ -1,0 +1,8 @@
+<h3>Operador Elvis</h3>
+
+<p>Descrição: {{tarefa.description}}</p>
+<!-- <p>Responsável: {{tarefa.respons.nome}}</p> -->
+<!--exemplo de ternário-->
+<p>Responsável: {{tarefa.respons != null ? tarefa.respons.nome : ''}}</p>
+<!--operador Elvis encurta o ternário, desde que seja uma propriedade com valor nulo e pode ter um objeto dentro de outro-->
+<p>Responsável: {{tarefa.respons?.usuario?.nome}}</p>

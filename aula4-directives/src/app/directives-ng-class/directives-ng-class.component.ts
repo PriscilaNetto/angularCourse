@@ -17,7 +17,5 @@ export class DirectivesNgClassComponent implements OnInit {
     onClickHere(){
       this.meuFavorito = !this.meuFavorito;
     }
-
-
 }
 
