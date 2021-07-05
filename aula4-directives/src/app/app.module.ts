@@ -10,6 +10,10 @@ import { DirectivesNgforComponent } from './directives-ngfor/directives-ngfor.co
 import { DirectivesNgClassComponent } from './directives-ng-class/directives-ng-class.component';
 import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
 import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { OperadorElvisComponent } from './operador-elvis/operador-elvis.componen
     DirectivesNgforComponent,
     DirectivesNgClassComponent,
     DirectiveNgstyleComponent,
-    OperadorElvisComponent
+    OperadorElvisComponent,
+    NgContentComponent,
+    FundoAmareloDirective,
+    CustomDirectivesComponent,
+    HighlightMouseDirective
   ],
   imports: [
     BrowserModule,
