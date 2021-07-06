@@ -8,4 +8,21 @@
 <p [highlightFull]="'pink'" [defaultColor]= "'yellow'">
   Texto com highlight e cores customizadas</p>
 
+<h5> Diretiva Estrutura customizada - ngElse </h5>
+
+<div *ngIf="mostrarCursos">
+  Lista de cursos:
+</div>
+
+<div *directiveNgelse="mostrarCursos">
+  Não há cursos para serem listados.
+</div>
+<br>
+<button (click)="onMostrarCursos()">Mostrar ou esconder cursos</button>
+<br>
+<ng-template [directiveNgelse]="mostrarCursos">
+  <div>
+    Não há cursos para serem listados.
+  </div>
+</ng-template>
 

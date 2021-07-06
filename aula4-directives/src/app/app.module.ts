@@ -15,6 +15,8 @@ import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { HighlightFullDirective } from './shared/highlight-full.directive';
+import { DirectiveNgelseDirective } from './shared/directive-ngelse.directive';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { HighlightFullDirective } from './shared/highlight-full.directive';
     FundoAmareloDirective,
     CustomDirectivesComponent,
     HighlightMouseDirective,
-    HighlightFullDirective
+    HighlightFullDirective,
+    DirectiveNgelseDirective,
+
   ],
   imports: [
     BrowserModule,
