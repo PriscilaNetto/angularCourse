@@ -15,11 +15,21 @@ export class CursosComponent implements OnInit {
 
   constructor(private cursosService: CursosService) {
     //this.cursosService = new CursosService();
-    //this.cursosService = _cursosService;
+    //this.cursosService = _cursosService; ex de injeção de dependência
   }
 
   ngOnInit(): void {
-    this.cursos = this.cursosService.getCursos()
+    this.cursos = this.cursosService.getCursos();
+    CursosService.criouNovoCurso.subscribe( //qdo se inscreve será notificado qdo emitir um novo valor
+    curso => this.cursos.push(curso)
+    //curso => console.log(curso) // exemplo de arrow func.
+    )
+
+
+    // function(curso){
+    //   console.log(curso);
+
+    }
   }
 
-}
+
